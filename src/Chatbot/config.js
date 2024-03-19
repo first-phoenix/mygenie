@@ -11,7 +11,7 @@ const userName = 'Jane';
 const config = {
     botName: botName,
     initialMessages: [createChatBotMessage(`Hi ${userName} – My name is Gennie, here to help you find people, documents, data, departments in a structured and summarized format – how can I help you?​`, {
-        widget: "startSlow"
+        widget: "startBtn"
     })],
     customComponents: {
         botAvatar: (props) => <Avatar {...props} />,

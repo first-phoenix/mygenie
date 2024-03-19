@@ -1,10 +1,9 @@
 import React from 'react'
 
 export default function TopicChoice(props) {
-
     const preference = (preference) => {
-        const { name, age } = props.state.userData;
-        const category = props.state.userData.category;
+        console.log(props);
+        const { name, age, category } = props.state.userData;
         const product = props.state.data[category][preference];
         props.state.userData.product = product;
         props.actions.finalResult(name, age, preference, product.name);

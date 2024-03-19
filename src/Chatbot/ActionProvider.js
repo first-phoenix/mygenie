@@ -1,10 +1,13 @@
 import React from 'react';
+import DipslayImage from './components/DipslayImage';
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
     const initialAction = () => {
-        const message = createChatBotMessage('Just type in your name to begin.');
-        updateState(message, "age")
+        const message = createChatBotMessage('Hi Jane – certainly, I went through 4 relevant research decks published within the last quarter and here is a summarized version of the latest trends:');
+         <DipslayImage/>
+         updateState(message, "age")
+
     }
 
     const afterNameMessage = () => {
