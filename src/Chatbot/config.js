@@ -1,15 +1,17 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import Avatar from './components/Avatar';
 import StartBtn from './components/StartBtn';
-import StartSlow from './components/StartSlow';
+import StartSlow from './components/TopicChoice';
 import data from './data';
 import DipslayImage from './components/DipslayImage';
 
+const botName = 'CGS Gennie';
+const userName = 'Jane';
 
 const config = {
-    botName: "AgeDrive Explorer",
-    initialMessages: [createChatBotMessage(`Welcome to RideAge Advisor!`, {
-        widget: "startBtn"
+    botName: botName,
+    initialMessages: [createChatBotMessage(`Hi ${userName} – My name is Gennie, here to help you find people, documents, data, departments in a structured and summarized format – how can I help you?​`, {
+        widget: "startSlow"
     })],
     customComponents: {
         botAvatar: (props) => <Avatar {...props} />,

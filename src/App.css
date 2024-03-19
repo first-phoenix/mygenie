@@ -10,17 +10,17 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background: #AA076B;
+    background: #7902cd;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #61045F, #AA076B);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #61045F, #AA076B);
+    background: linear-gradient(to right, #48006c, #9f00e3);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  }
 
 .react-chatbot-kit-chat-container {
-    width: 400px;
-}
+    width: 75vw;
+  }
 
 .react-chatbot-kit-chat-bot-message {
     margin-left: 10px;
@@ -28,6 +28,7 @@
 
 .react-chatbot-kit-chat-bot-message {
     background-color: #61045F;
+    width: 60vw;
 }
 
 .react-chatbot-kit-chat-bot-message-arrow {
@@ -38,15 +39,15 @@
     background-color: #61045F;
 }
 
-.ADE {
-    background-color: #AA076B;
+.CG {
+    background-color: #4e045c;
     width: 40px;
     height: 40px;
     display: grid;
     place-items: center;
     color: white;
     border-radius: 100%;
-}
+  }
 
 .start-btn {
     background-color: #61045F;
@@ -58,7 +59,22 @@
     margin-left: 3rem;
 }
 
-.slow-btn {
+.measures-btn {
+    background-color: #924191;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3rem;
+    width: 25%;
+}
+
+.trends-btn {
+    margin-left: 1rem;
+}
+
+.quality-btn {
     margin-left: 1rem;
 }
 
