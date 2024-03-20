@@ -1,0 +1,40 @@
+.dashboard {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .dashboard img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Make the image circular */
+    margin: 0 auto; /* Center the image */
+    display: block;
+  }
+  
+  .dashboard h2,
+  .dashboard p {
+    text-align: center;
+  }
+  
+  .dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .dashboard th,
+  .dashboard td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .dashboard th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard table {
+      font-size: 14px; /* Adjust as needed */
+    }
+  }
