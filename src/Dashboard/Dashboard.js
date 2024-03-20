@@ -32,7 +32,30 @@ function Dashboard() {
               <input type="checkbox" defaultChecked />
             </td>
           </tr>
-          {/* Other rows */}
+          <tr>
+            <td>Supply Chain</td>
+            <td>
+              <input type="checkbox" defaultChecked />
+            </td>
+          </tr>
+          <tr>
+            <td>Portfolio</td>
+            <td>
+              <input type="checkbox" defaultChecked />
+            </td>
+          </tr>
+          <tr>
+            <td>Marketing</td>
+            <td>
+              <input type="checkbox" defaultChecked />
+            </td>
+          </tr>
+          <tr>
+            <td>Regulatory Compliances</td>
+            <td>
+              <input type="checkbox" defaultChecked />
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
