@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo.svg'; // Import your website logo;
+import logo from '../Assets/logowithname.jpg'; // Import your website logo;
 import './LoadingPage.css';
 
 const LoadingPage = () => {

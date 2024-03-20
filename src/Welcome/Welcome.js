@@ -1,7 +1,14 @@
 import React from 'react';
 import './Welcome.css'; // Importing the CSS file for styling
+import homeImage from '../Assets/homeicon.png';
 
 const Welcome = () => {
+
+    const handleLogin = () => {
+        // Redirect to the second page
+        window.location.href = '/page2';
+    };
+
     return (
         <div className="welcome-container">
             <h1>Quick lookup</h1>
@@ -16,7 +23,7 @@ const Welcome = () => {
                     <img src="https://static.vecteezy.com/system/resources/previews/000/420/512/non_2x/microphone-icon-vector-illustration.jpg" alt="Microphone" className="microphone-icon" />
                 </div>
             </div>
-            <button className="home-button">Home</button>
+            <img src={homeImage} alt="Home" className="home-button" onClick={handleLogin} />
         </div>
     );
 };
