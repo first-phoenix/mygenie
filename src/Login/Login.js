@@ -1,5 +1,7 @@
 import React from 'react';
 import './Login.css'; // Importing the CSS file for styling
+import loginuser from '../Assets/login-user.png'
+import loginButton from '../Assets/log-in.png'
 
 const Login = () => {
     const handleLogin = () => {
@@ -9,7 +11,8 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <h2>Login</h2>
+            {/* <p className='loginHeading'>Login</p> */}
+            <img src={loginuser} className='loginuser' alt='UserImage'></img>
             <div className="form-group">
                 <label>Email ID</label>
                 <input type="text" placeholder="Enter your email" />
@@ -25,11 +28,12 @@ const Login = () => {
             <div className="form-group">
                 <label>Choose Role</label>
                 <select>
+                    <option disabled selected>Select Role</option>
                     <option value="Manager">Manager</option>
                     <option value="Supervisor">Supervisor</option>
                 </select>
             </div>
-            <button onClick={handleLogin}>Login</button>
+            <img src={loginButton} alt='Log in' onClick={handleLogin} className='loginbutton'></img>
         </div>
     );
 };
