@@ -10,14 +10,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background: linear-gradient(to right, #48006c, #9f00e3);
     z-index: 9999; /* Set a high z-index to ensure it's displayed above other content */
 }
 
 .logo {
-    width: 150px; /* Adjust the width of your logo */
+    width: 300px; /* Adjust the width of your logo */
     height: auto;
     margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Add shadow effect */
 }
 
 .loading-text {

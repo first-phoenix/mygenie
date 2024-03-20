@@ -4,7 +4,7 @@ import './Login.css'; // Importing the CSS file for styling
 const Login = () => {
     const handleLogin = () => {
         // Redirect to the second page
-        window.location.href = '/secondpage';
+        window.location.href = '/page1';
     };
 
     return (

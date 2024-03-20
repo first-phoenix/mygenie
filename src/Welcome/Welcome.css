@@ -77,7 +77,7 @@ h3{
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
-    height: 100%; /* Set the height of the icon to match the height of the input */
+    height: 66%; /* Set the height of the icon to match the height of the input */
     width: auto; /* Allow the width to adjust automatically based on the height */
     border-radius: 5px; /* Add border-radius to round the corners */
 
@@ -85,12 +85,16 @@ h3{
 
 .home-button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #4e0175;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    height: 75px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    border-radius: 50px;
+
 }
 
 .home-button:hover {
