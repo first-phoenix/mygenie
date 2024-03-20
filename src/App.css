@@ -34,19 +34,10 @@
   .chatbot {
     width: 75%; /* Adjust as needed for your chatbot width */
     padding: 20px;
+    height: 100%;
   }
   
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
   
-    .dashboard, .chatbot {
-      width: 100%;
-    }
-  }
-
 .react-chatbot-kit-chat-container {
     width: 73vw;
     height: 100%;
@@ -131,3 +122,27 @@
     height: 100%;
     object-fit: cover;
 }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .dashboard, .chatbot {
+      width: 100%;
+      height: 100%;
+    }
+    .threeWidgets{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    .measures-btn{
+      width: 80%;
+      margin: 0;
+    }
+    .react-chatbot-kit-chat-container {
+      width: 100%;
+  }
+  }
