@@ -1,0 +1,26 @@
+
+
+.loading-container {
+    position: fixed; /* Position the loading container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    z-index: 9999; /* Set a high z-index to ensure it's displayed above other content */
+}
+
+.logo {
+    width: 150px; /* Adjust the width of your logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.loading-text {
+    font-size: 20px;
+    font-weight: bold;
+}
