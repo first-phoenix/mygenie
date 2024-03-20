@@ -7,7 +7,7 @@ const Welcome = () => {
 
     const handleLogin = () => {
         // Redirect to the second page
-        window.location.href = '/page2';
+        window.location.href = '/home';
     };
 
     return (

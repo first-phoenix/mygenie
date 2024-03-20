@@ -7,7 +7,7 @@ import logoImage from '../Assets/logo.jpg'
 const Login = () => {
     const handleLogin = () => {
         // Redirect to the second page
-        window.location.href = '/page1';
+        window.location.href = '/welcome';
     };
 
     return (
