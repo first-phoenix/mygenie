@@ -32,6 +32,9 @@
   }
   
   .chatbot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 75%; /* Adjust as needed for your chatbot width */
     padding: 20px;
     height: 100%;
@@ -39,6 +42,9 @@
   
   
 .react-chatbot-kit-chat-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
     width: 73vw;
     height: 100%;
 }
