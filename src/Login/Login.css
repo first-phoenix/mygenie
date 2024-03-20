@@ -1,55 +1,115 @@
-    body {
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
-    .login-container {
-        max-width: 400px;
-        padding: 20px;
-        margin: 20px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+.login-wrapper{
+    height: 100vh;
+    align-items: center;
+}
 
-    .form-group {
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.logo {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Allow height to adjust automatically */
+}
+
+.loginHeading{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.login-container {
+    max-width: 600px; /* Increased max-width */
+    width: 100vw; /* Responsive width */
+    padding: 30px; /* Increased padding */
+    margin: 20px auto; /* Center the container */
+    background-color: #eed1ffcf; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
+    text-align: center; /* Align text to center */
+    height: 90vh;
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+.loginuser{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.loginbutton{
+    height: 10vh;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.loginbutton:hover {
+    background-color: #aa00b351;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+.form-group {
+    margin-bottom: 20px; /* Increased margin-bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 label {
     display: block;
     font-weight: bold;
+    margin-bottom: 5px; /* Added margin-bottom */
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="number"] { /* Added input[type="number"] */
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    padding: 12px; /* Increased padding */
+    border: 1px solid #dd6fff;
+    border-radius: 10px; /* Rounded corners */
     box-sizing: border-box;
     font-size: 16px;
     margin-top: 5px;
 }
 
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dd6fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Placeholder for select */
+select option[disabled] {
+    color: #cccccc;
+}
+
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px; /* Increased padding */
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #007bff;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Added transition */
 }
 
-button:hover {
-    background-color: #0056b3;
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90vw; /* Set width to 50% for small screens */
+    }
 }
