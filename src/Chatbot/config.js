@@ -21,7 +21,7 @@ const config = {
         data,
         userData: {
             name: "",
-            age: 0,
+            age: "",
             category: "",
             product: {
                 name: "",
