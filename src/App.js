@@ -6,6 +6,7 @@ import MainPage from './MainPage/MainPage';
 import Login from './Login/Login';
 import LoadingPage from './LoadingPage/LoadingPage';
 import Welcome from './Welcome/Welcome';
+import Home from './Home/Home'
 
 function App() {
 
@@ -26,8 +27,9 @@ function App() {
         <Router>
         <Routes>
             <Route exact path="/" element={<Login/>} />
-            <Route exact path="page1" element={<Welcome />} />
-            <Route exact path="page2" element={<MainPage />} />
+            <Route exact path="welcome" element={<Welcome />} />
+            <Route exact path="home" element={<Home />} />
+            <Route exact path="chathere" element={<MainPage />} />
         </Routes>
         </Router>
       )}
