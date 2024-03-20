@@ -14,6 +14,9 @@ const MessageParser = ({ children, actions }) => {
             children.props.state.userData.age = message;
             children.props.state.userData.category = "kid";
         }
+        if(checker==="preference2"){
+            actions.afterAgeMessage2();
+        }
     }
     return (
         <div>
