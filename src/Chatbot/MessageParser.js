@@ -9,16 +9,10 @@ const MessageParser = ({ children, actions }) => {
             children.props.state.userData.name = message;
         }
 
-        if (checker === "preference" && Number(message)) {
+        if (checker === "preference") {
             actions.afterAgeMessage();
             children.props.state.userData.age = message;
-            if (message <= 10) {
-                children.props.state.userData.category = "kid";
-            } else if (message > 10 && message <= 20) {
-                children.props.state.userData.category = "teenagers";
-            } else {
-                children.props.state.userData.category = "adults";
-            }
+            children.props.state.userData.category = "kid";
         }
     }
     return (
