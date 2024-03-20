@@ -1,7 +1,6 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import Avatar from './components/Avatar';
 import StartBtn from './components/StartBtn';
-import StartSlow from './components/TopicChoice';
 import data from './data';
 import DipslayImage from './components/DipslayImage';
 
@@ -36,11 +35,7 @@ const config = {
             widgetFunc: (props) => <StartBtn {...props} />,
         },
         {
-            widgetName: "startSlow",
-            widgetFunc: (props) => <StartSlow {...props} />,
-        },
-        {
-            widgetName: "finalImage",
+            widgetName: "image",
             widgetFunc: (props) => <DipslayImage {...props} />,
         },
     ]
