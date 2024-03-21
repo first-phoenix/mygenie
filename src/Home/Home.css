@@ -6,13 +6,51 @@
 }
 
 .tile {
-    width: 80%; /* Adjust as needed */
+    width: 50%; /* Adjust as needed */
+    height: 30vh;
     background-color: hsl(275, 100%, 91%);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
+    overflow: auto;
+}
+
+.tile::-webkit-scrollbar{
+    display: none;
+}
+
+.tile-content{
+    flex-grow: 1    ;
+}
+
+.tile1 {
+    background-image: url('../Assets/home-tile1.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgba(255, 255, 255, 0.128);
+}
+
+.tile2 {
+    background-image: url('../Assets/home-tile2.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgba(255, 255, 255, 0.128);
+}
+
+.tile3 {
+    background-image: url('../Assets/home-tile3.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgba(255, 255, 255, 0.128);
+}
+
+.tile4 {
+    background-image: url('../Assets/home-tile4.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgba(255, 255, 255, 0.128);
 }
 
 .tile:hover{
@@ -23,8 +61,11 @@
 .tile h2 {
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    font-size: 20px;
-    color: black;
+    font-size: 36px;
+    color: rgb(143, 0, 186);
+    background-color: #ffffffca;
+    padding: 5px;
+    border-radius: 15px
 }
 
 .welcomeNote{
@@ -35,16 +76,25 @@
 .home-wrapper{
     height: 100vh;
     align-items: center;
+    overflow: auto;
+    width: 100vw;
+}
+
+.home-wrapper::-webkit-scrollbar{
+    display: none;
 }
 
 .clickImage{
     height: 75px;
+    background-color: #a200b469;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
+
 }
 
 .clickImage:hover{
-    background-color: #aa00b351;
     padding: 10px;
-    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -54,4 +104,23 @@
     left: 10px; /* Adjust as needed */
     width: 50px; /* Adjust as needed */
     height: auto; /* Allow height to adjust automatically */
+}
+
+@media (max-width: 950px){
+    .tile{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .lineSperation{
+        font-size: 7px;
+    }
+    .tile{
+        width: 80%;
+        overflow: auto  ;
+    }
+    .tile h2{
+        font-size: 28px;
+    }
 }
