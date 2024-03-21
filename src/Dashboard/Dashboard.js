@@ -7,7 +7,7 @@ function Dashboard() {
   return (
     <div className='dashboardwrapper'>
       {/* Avatar image */}
-      <img src={logoImage} alt='logo' className='logo'></img>
+      <img src={logoImage} alt='logo' className='logoDash'></img>
       <img src={userAvatar} alt="Avatar" className='avatarImage' />
 
       <div>
