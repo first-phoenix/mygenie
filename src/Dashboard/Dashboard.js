@@ -1,12 +1,14 @@
 import React from 'react';
 import './Dashboard.css';
 import userAvatar from '../Assets/WelcomeAvatar.jpg'
+import logoImage from '../Assets/logo.jpg'
 
 function Dashboard() {
   return (
     <div className='dashboardwrapper'>
       {/* Avatar image */}
-      <img src={userAvatar} alt="Avatar" />
+      <img src={logoImage} alt='logo' className='logo'></img>
+      <img src={userAvatar} alt="Avatar" className='avatarImage' />
 
       <div>
         <h2>Jane Johnson</h2>
