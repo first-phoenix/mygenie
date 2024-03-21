@@ -7,11 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Welcome = () => {
 
-    // const handleLogin = () => {
-    //     // Redirect to the second page
-    //     window.location.href = '/home';
-    // };
-
     return (
         <div className='welcome-wrapper'>
             <img src={logoImage} alt="Logo" className="logo" /> {/* Added logo image */}

@@ -37,23 +37,6 @@ function App() {
       )}
     </div>
   );
-  // return (
-  //   <div className="App">
-  //     {isLoading ? (
-  //       <LoadingPage />
-  //     ) : (
-  //       <Router>
-  //       <Routes>
-  //           <Route exact path="/cgsgennie" element={<Login/>} />
-  //           <Route exact path="/" element={<Login/>} />
-  //           <Route exact path="welcome" element={<Welcome />} />
-  //           <Route exact path="home" element={<Home />} />
-  //           <Route exact path="chathere" element={<MainPage />} />
-  //       </Routes>
-  //       </Router>
-  //     )}
-  //   </div>
-  // );
 }
 
 export default App;
