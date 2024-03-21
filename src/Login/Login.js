@@ -2,14 +2,11 @@ import React from 'react';
 import './Login.css'; // Importing the CSS file for styling
 import loginuser from '../Assets/login-user.png'
 import loginButton from '../Assets/log-in.png'
-import logoImage from '../Assets/logo.jpg'
+import logoImage from '../Assets/logo.jpg';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
-    const handleLogin = () => {
-        // Redirect to the second page
-        window.location.href = '/welcome';
-    };
-
+    
     return (
         <div className='login-wrapper'>
             <img src={logoImage} alt='logo' className='logo'></img>
@@ -35,7 +32,9 @@ const Login = () => {
                         <option value="Supervisor">Supervisor</option>
                     </select>
                 </div>
-                <img src={loginButton} alt='Log in' onClick={handleLogin} className='loginbutton'></img>
+                <Link to='/welcome'>
+                <img src={loginButton} alt='Log in' className='loginbutton'></img>
+                </Link>
             </div>
         </div>
     );

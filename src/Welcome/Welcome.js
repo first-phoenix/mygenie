@@ -3,13 +3,9 @@ import './Welcome.css'; // Importing the CSS file for styling
 import homeImage from '../Assets/homeicon.png';
 import logoImage from '../Assets/logo.jpg';
 import welcomeAvatar from '../Assets/WelcomeAvatar.jpg';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
-
-    const handleLogin = () => {
-        // Redirect to the second page
-        window.location.href = '/home';
-    };
 
     return (
         <div className='welcome-wrapper'>
@@ -27,7 +23,7 @@ const Welcome = () => {
                         <img src="https://static.vecteezy.com/system/resources/previews/000/420/512/non_2x/microphone-icon-vector-illustration.jpg" alt="Microphone" className="microphone-icon" />
                     </div>
                 </div>
-                <img src={homeImage} alt="Home" className="home-button" onClick={handleLogin} />
+                <Link to='/home'><img src={homeImage} alt="Home" className="home-button" /></Link>
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import 'react-chatbot-kit/build/main.css';
 import './App.css';
 import MainPage from './MainPage/MainPage';
@@ -24,15 +25,15 @@ function App() {
       {isLoading ? (
         <LoadingPage />
       ) : (
-        <Router>
-        <Routes>
-            <Route exact path="/cgsgennie" element={<Login/>} />
-            <Route exact path="/" element={<Login/>} />
-            <Route exact path="welcome" element={<Welcome />} />
-            <Route exact path="home" element={<Home />} />
-            <Route exact path="chathere" element={<MainPage />} />
-        </Routes>
-        </Router>
+        <HashRouter>
+          <Routes>
+            <Route exact path="/cgsgennie" Component={Login} />
+            <Route exact path="/" Component={Login} />
+            <Route exact path="welcome" Component={Welcome} />
+            <Route exact path="home" Component={Home} />
+            <Route exact path="chathere" Component={MainPage} />
+          </Routes>
+        </HashRouter>
       )}
     </div>
   );
