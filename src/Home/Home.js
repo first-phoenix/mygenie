@@ -2,13 +2,14 @@ import React from 'react';
 import './Home.css';
 import logoImage from '../Assets/logo.jpg';
 import clickImage from '../Assets/click-here.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-    const handleLogin = () => {
-        // Redirect to the second page
-        window.location.href = '/chathere';
-    };
+    // const handleLogin = () => {
+    //     // Redirect to the second page
+    //     window.location.href = '/chathere';
+    // };
 
     return (
         <div className='home-wrapper'>
@@ -17,7 +18,7 @@ const Home = () => {
                 <h2 className='welcomeNote'>Hi! Jane!</h2>
                 <div className="tile">
                     <h2>Start your next research or project here</h2>
-                    <img src={clickImage} onClick={handleLogin} alt='click here' className='clickImage'></img>
+                    <Link to='/chathere'><img src={clickImage} alt='click here' className='clickImage'></img></Link>
                 </div>
                 <p>----------------------------------------------------------------------------------------</p>
                 <h2 className='welcomeNote'>Start your day</h2>
