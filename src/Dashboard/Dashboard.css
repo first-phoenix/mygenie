@@ -3,14 +3,6 @@
   padding: 20px;
 }
 
-.dashboard img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 4px 8px 0 rgba(153, 0, 255, 0.5); }
-
 .dashboard h2,
 .dashboard p {
   text-align: center;
@@ -38,6 +30,25 @@
 .dashboard th {
   background-color: rgba(141, 0, 228, 0.00); /* Table header background color: Change to desired color */
   border-radius: 15px;
+}
+
+.avatarImage{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(153, 0, 255, 0.5); 
+}
+
+.logo {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  width: 20px; /* Adjust as needed */
+  height: auto; /* Allow height to adjust automatically */
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(153, 0, 255, 0.5); 
 }
 
 /* Responsive adjustments */
