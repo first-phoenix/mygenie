@@ -23,16 +23,8 @@
 .tile h2 {
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    font-size: 20px
-}
-
-.tile button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #c800ff;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 20px;
+    color: black;
 }
 
 .welcomeNote{
