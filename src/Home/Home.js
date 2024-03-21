@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
-import logoImage from '../Assets/logo.jpg'
+import logoImage from '../Assets/logo.jpg';
+import clickImage from '../Assets/click-here.png';
 
 const Home = () => {
 
@@ -13,16 +14,16 @@ const Home = () => {
         <div className='home-wrapper'>
             <img src={logoImage} alt='logo' className='logo'></img>
             <div className="home-container">
-                <h2>Hi! Jane!</h2>
+                <h2 className='welcomeNote'>Hi! Jane!</h2>
                 <div className="tile">
                     <h2>Start your next research or project here</h2>
-                    <button onClick={handleLogin}>Click here</button>
+                    <img src={clickImage} onClick={handleLogin} alt='click here' className='clickImage'></img>
                 </div>
                 <p>----------------------------------------------------------------------------------------</p>
-                <h2>Start your day</h2>
+                <h2 className='welcomeNote'>Start your day</h2>
                 <div className="tile">
                     <h2>Most important organization news</h2>
-                    <button>Click here</button>
+                    <img src={clickImage} alt='click here' className='clickImage'></img>
                 </div>
             </div>
         </div>

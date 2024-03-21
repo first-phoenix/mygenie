@@ -1,40 +1,57 @@
 .dashboard {
-    background-color: #f0f0f0;
-    padding: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.dashboard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(153, 0, 255, 0.5); }
+
+.dashboard h2,
+.dashboard p {
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 0px solid #ccc; /* Outline color: Change to desired color */
+  box-shadow: 0 4px 8px 0 rgba(153, 0, 255, 0.5); /* Shadow effect */
+  border-radius: 15px;
+  background-color: rgba(141, 0, 228, 0.1);
+}
+
+.dashboard th,
+.dashboard td {
+  border: none; /* Remove borders */
+  padding: 8px;
+  text-align: left; /* Align text to the left */
+}
+
+.dashboard th {
+  background-color: rgba(141, 0, 228, 0.00); /* Table header background color: Change to desired color */
+  border-radius: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard table {
+      font-size: 14px; /* Adjust font size for smaller screens */
   }
   
   .dashboard img {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    border-radius: 50%; /* Make the image circular */
-    margin: 0 auto; /* Center the image */
-    display: block;
+      width: 100px; /* Adjust avatar size for smaller screens */
+      height: 100px;
   }
   
-  .dashboard h2,
-  .dashboard p {
-    text-align: center;
+  .dashboard h2 {
+      font-size: 24px; /* Adjust heading font size for smaller screens */
   }
-  
-  .dashboard table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .dashboard th,
-  .dashboard td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .dashboard th {
-    background-color: #f2f2f2;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .dashboard table {
-      font-size: 14px; /* Adjust as needed */
-    }
-  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './Welcome.css'; // Importing the CSS file for styling
 import homeImage from '../Assets/homeicon.png';
 import logoImage from '../Assets/logo.jpg';
+import welcomeAvatar from '../Assets/WelcomeAvatar.jpg';
 
 const Welcome = () => {
 
@@ -17,7 +18,7 @@ const Welcome = () => {
                 <h1>Quick lookup</h1>
                 <h2>Welcome Jane</h2>
                 <div className="user-image">
-                    <img src="https://t3.ftcdn.net/jpg/06/17/13/26/360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg" alt="User" />
+                    <img src={welcomeAvatar} alt="User" className='user-image-avatar' />
                 </div>
                 <div className="user-input">
                     <h3 className='askAssistance'>How can I help you?</h3>

@@ -3,6 +3,7 @@ import Avatar from './components/Avatar';
 import StartBtn from './components/StartBtn';
 import data from './data';
 import DipslayImage from './components/DipslayImage';
+import UserAvatar from './components/UserAvatar';
 
 const botName = 'CGS Gennie';
 const userName = 'Jane';
@@ -14,6 +15,7 @@ const config = {
     })],
     customComponents: {
         botAvatar: (props) => <Avatar {...props} />,
+        userAvatar: (props) => <UserAvatar {...props} />,
     },
     state: {
         checker: null,
