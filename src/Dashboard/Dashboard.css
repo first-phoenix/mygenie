@@ -41,14 +41,15 @@
   box-shadow: 0 4px 8px 0 rgba(153, 0, 255, 0.5); 
 }
 
-.logo {
+.logoDash {
   position: absolute;
   bottom: 10px; /* Adjust as needed */
   left: 10px; /* Adjust as needed */
-  width: 20px; /* Adjust as needed */
+  width: 50px; /* Adjust as needed */
   height: auto; /* Allow height to adjust automatically */
   border-radius: 100%;
   box-shadow: 0 4px 8px 0 rgba(153, 0, 255, 0.5); 
+  background-color: #4a0461;
 }
 
 /* Responsive adjustments */
