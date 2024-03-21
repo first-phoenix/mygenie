@@ -7,15 +7,23 @@
 
 .tile {
     width: 80%; /* Adjust as needed */
-    background-color: #f0f0f0;
+    background-color: hsl(275, 100%, 91%);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
     text-align: center;
+    box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
+}
+
+.tile:hover{
+    background-color: hsla(275, 100%, 91%, 0.815);
+
 }
 
 .tile h2 {
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    font-size: 20px
 }
 
 .tile button {
@@ -27,11 +35,26 @@
     cursor: pointer;
 }
 
+.welcomeNote{
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 1, 0, 1); 
+}
+
 .home-wrapper{
     height: 100vh;
     align-items: center;
 }
 
+.clickImage{
+    height: 75px;
+}
+
+.clickImage:hover{
+    background-color: #aa00b351;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
 .logo {
     position: absolute;
