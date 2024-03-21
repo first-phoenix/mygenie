@@ -26,6 +26,7 @@ function App() {
       ) : (
         <Router>
         <Routes>
+            <Route exact path="/cgsgennie" element={<Login/>} />
             <Route exact path="/" element={<Login/>} />
             <Route exact path="welcome" element={<Welcome />} />
             <Route exact path="home" element={<Home />} />
