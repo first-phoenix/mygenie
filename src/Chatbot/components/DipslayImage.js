@@ -1,27 +1,18 @@
 import React from 'react'
+import industryImage1 from '../../Assets/industrypic1.png'
+import industryImage2 from '../../Assets/industrypic2.png'
 
 export default function DipslayImage(props) {
-    // const { imageUrl, link } = props.state.userData.product;
-    const imageUrl1 = "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600";
-    const imageUrl2 = "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600";
-    const imageUrl3 = "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600";
-    const imageUrl4 = "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600";
 
     console.log(props.state.userData)
 
     return (
         <div className='img-component'>
             <div className='img-container'>
-                <img src={imageUrl1} alt="" />
+                <img src={industryImage1} alt="" style={{ width: '100%' }}/>
             </div>
             <div className='img-container'>
-                <img src={imageUrl2} alt="" />
-            </div>
-            <div className='img-container'>
-                <img src={imageUrl3} alt="" />
-            </div>
-            <div className='img-container'>
-                <img src={imageUrl4} alt="" />
+                <img src={industryImage2} alt="" style={{ width: '100%' }}/>
             </div>
         </div>
     )

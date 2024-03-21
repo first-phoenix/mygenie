@@ -5,7 +5,7 @@ import './LoadingPage.css';
 const LoadingPage = () => {
     return (
         <div className="loading-container">
-            <img src={logo} alt="Website Logo" className="logo" />
+            <img src={logo} alt="Website Logo" className="logowithname" />
             <div className="loading-text">Loading...</div>
         </div>
     );
