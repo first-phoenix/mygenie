@@ -34,6 +34,40 @@
   padding-top: 10px;
 }
 
+/* Hide the default checkbox */
+.dashboard input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Style the custom checkbox */
+.dashboard input[type="checkbox"]::before {
+  content: ""; /* Empty content */
+  display: inline-block;
+  width: 20px; /* Size of the checkbox */
+  height: 20px; /* Size of the checkbox */
+  border: 2px solid #4a0461; /* Border color */
+  border-radius: 50%; /* Make the checkbox round */
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth color change */
+}
+
+/* Style the custom checkbox when checked */
+.dashboard input[type="checkbox"]:checked::before {
+  background-color: rgb(78, 211, 255); /* Fill color when checked */
+  border-color: lightblue; /* Border color when checked */
+}
+
+/* Style the checkmark inside the custom checkbox */
+.dashboard input[type="checkbox"]:checked::before {
+  content: "\2713"; /* Unicode checkmark character */
+  font-size: 16px; /* Adjust size of the checkmark */
+  color: #4a0461; /* Color of the checkmark */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .avatarImage{
   width: 150px;
   height: 150px;

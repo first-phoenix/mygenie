@@ -2,12 +2,13 @@ import React from 'react';
 import './Dashboard.css';
 import userAvatar from '../Assets/WelcomeAvatar.jpg'
 import logoImage from '../Assets/logo.jpg'
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
   return (
     <div className='dashboardwrapper'>
       {/* Avatar image */}
-      <img src={logoImage} alt='logo' className='logoDash'></img>
+      <Link to='/'><img src={logoImage} alt='logo' className='logoDash'></img></Link>
       <img src={userAvatar} alt="Avatar" className='avatarImage' />
 
       <div>
