@@ -55,13 +55,13 @@
 
 .tile:hover{
     background-color: hsla(275, 100%, 91%, 0.815);
-
+    box-shadow: 0 0 30px rgba(0, 2, 0, 2); /* Shadow effect */
 }
 
 .tile h2 {
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    font-size: 36px;
+    font-size: 24px;
     color: rgb(143, 0, 186);
     background-color: #ffffffca;
     padding: 5px;
@@ -85,17 +85,18 @@
 }
 
 .clickImage{
-    height: 75px;
-    background-color: #a200b469;
-    padding: 5px;
+    height: 70px;
+    background-color: #f494ff;
+    padding: 10px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
-
+    background: radial-gradient(circle, rgba(125,2,160,0.8428163501728816) 0%, rgba(200,30,204,1) 35%, rgba(69,0,255,1) 100%);
 }
 
 .clickImage:hover{
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
+    height: 75px;
 }
 
 .logo {

@@ -14,15 +14,15 @@ const Login = () => {
                 <img src={loginuser} className='loginuser' alt='UserImage'></img>
                 <div className="form-group">
                     <label>Email ID</label>
-                    <input type="text" placeholder="Enter your email" />
+                    <input type="text" placeholder="Enter your email" className='login-input'/>
                 </div>
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter your password" />
+                    <input type="password" placeholder="Enter your password" className='login-input'/>
                 </div>
                 <div className="form-group">
                     <label>Two factor authentication</label>
-                    <input type="text" placeholder="Enter authentication code" />
+                    <input type="text" placeholder="Enter authentication code" className='login-input'/>
                 </div>
                 <div className="form-group">
                     <label>Choose Role</label>
