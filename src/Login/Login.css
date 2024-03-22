@@ -124,5 +124,6 @@ button {
 @media screen and (max-width: 768px) {
     .login-container {
         width: 90vw; /* Set width to 50% for small screens */
+        height: 75vh;
     }
 }
