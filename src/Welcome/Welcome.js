@@ -9,7 +9,7 @@ const Welcome = () => {
 
     return (
         <div className='welcome-wrapper'>
-            <img src={logoImage} alt="Logo" className="logo" /> {/* Added logo image */}
+            <Link to='/'><img src={logoImage} alt='logo' className='logo'></img></Link>
             <div className="welcome-container">
                 <h1>Quick lookup</h1>
                 <h2>Welcome Jane</h2>

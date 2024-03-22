@@ -6,10 +6,10 @@ import logoImage from '../Assets/logo.jpg';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
-    
+
     return (
         <div className='login-wrapper'>
-            <img src={logoImage} alt='logo' className='logo'></img>
+            <Link to='/'><img src={logoImage} alt='logo' className='logo'></img></Link>
             <div className="login-container">
                 <img src={loginuser} className='loginuser' alt='UserImage'></img>
                 <div className="form-group">
