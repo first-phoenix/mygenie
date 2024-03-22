@@ -34,12 +34,20 @@ body {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
     text-align: center; /* Align text to center */
-    height: 90vh;
+    height: 95vh;
     box-sizing: border-box; /* Include padding and border in the total width */
+    overflow: auto;
 }
+
+.login-container::-webkit-scrollbar{
+    display: none;
+}
+
 .loginuser{
     height: 100px;
     margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 .loginbutton{
@@ -47,10 +55,11 @@ body {
     width: auto;
     cursor: pointer;
     transition: background-color 0.3s; 
+    border-radius: 15px;
+
 }
 
 .loginbutton:hover {
-    background-color: #aa00b351;
     padding: 10px;
     border-radius: 15px;
 }
@@ -79,16 +88,20 @@ input[type="number"] { /* Added input[type="number"] */
     box-sizing: border-box;
     font-size: 16px;
     margin-top: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+
 }
 
 select {
     width: 100%;
     padding: 12px;
     border: 1px solid #dd6fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
     font-size: 16px;
     margin-top: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+
 }
 
 /* Placeholder for select */
