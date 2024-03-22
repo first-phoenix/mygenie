@@ -126,4 +126,7 @@ button {
         width: 90vw; /* Set width to 50% for small screens */
         height: 75vh;
     }
+    .logo{
+        width: 30px;
+    }
 }
