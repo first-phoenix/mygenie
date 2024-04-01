@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
+  const [timeoutId, setTimeoutId] = useState(null);
   const initialMessage = () => {
     const message = createChatBotMessage(
       <>
@@ -169,19 +170,37 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     const message = createChatBotMessage(
       <>Happy to help – here is your word document:</>
     );
-    updateState(message,"keyword8");
+    updateState(message, "keyword8");
+    const timeout = setTimeout(() => {
+      const nextMessage = createChatBotMessage(
+        <>
+          Hi Jane, are you still there? What else can I assist you with?
+          <br></br>
+          <br></br>I can translate documents for you to local languages….and
+          more. See here for more info
+        </>
+      );
+      updateState(nextMessage);
+    }, 10000);
+    setTimeoutId(timeout);
   };
-  const afterEighthMessage = () => {
-    const message = createChatBotMessage(
-      <>
-        Hi Jane, are you still there? What else can I assist you with?
-        <br></br>
-        <br></br>I can translate documents for you to local languages….and more.
-        See here for more info
-      </>
-    );
-    updateState(message);
+  const clearTimeoutout = () => {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+      setTimeoutId(null);
+    }
   };
+  //   const afterEighthMessage = () => {
+  //     const message = createChatBotMessage(
+  //       <>
+  //         Hi Jane, are you still there? What else can I assist you with?
+  //         <br></br>
+  //         <br></br>I can translate documents for you to local languages….and more.
+  //         See here for more info
+  //       </>
+  //     );
+  //     updateState(message);
+  //   };
 
   const updateState = (message, checker) => {
     setState((prev) => ({
@@ -204,7 +223,8 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             afterFifthMessage,
             afterSixthMessage,
             afterSeventhMessage,
-            afterEighthMessage,
+            clearTimeoutout,
+            //afterEighthMessage,
             //finalMessage,
           },
         });

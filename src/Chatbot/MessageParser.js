@@ -29,9 +29,9 @@ const MessageParser = ({ children, actions }) => {
     if (checker === "keyword7") {
       actions.afterSeventhMessage();
     }
-    if (checker === "keyword8") {
-      actions.afterEighthMessage();
-    }
+    // if (checker === "keyword8") {
+    //   actions.afterEighthMessage();
+    // }
   };
   return (
     <div>
