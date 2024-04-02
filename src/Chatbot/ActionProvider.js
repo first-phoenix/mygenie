@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import timeoutimg from "../Assets/timeout.png";
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const [timeoutId, setTimeoutId] = useState(null);
@@ -25,12 +26,14 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const afterSecondMessage = () => {
     const message = createChatBotMessage(
       <>
-        Here are some researches and reports based returns for the ​<br></br>
+        Here are some researches and reports based returns for the ​<br></br>​
+        <br></br>
         1) In the Idaho plant a Modified Atmosphere Packaging technology was
         implemented for cut fruits – , slowed down the ripening process |
         Client: Danone<br></br>
         POC: Boris Hoot<br></br>
-        Link to Success Story & Compliance/Regulatory Checklist<br></br>
+        Link to Success Story & Compliance/Regulatory Checklist<br></br>​
+        <br></br>
         2) In NZ plant, we recently used Antimicrobial Packaging for seafood and
         extended shelf life 3x | Client: Nestle<br></br>
         POC: Ram Hari <br></br>
@@ -177,18 +180,25 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     const timeout = setTimeout(() => {
       const nextMessage = createChatBotMessage(
         <>
+          {/* <div style={{ display: "flex", justifyContent: "center" }}>
+            <img
+              src={timeoutimg}
+              alt="Timeout"
+              style={{ justifyContent: "center",width: "200px", height: "auto" }}
+            />
+          </div> */}
+          <br />
           Hi Jane, are you still there? What else can I assist you with?
-          <br></br>
-          <br></br>I can translate documents for you to local languages….and
-          more. See here for more info
+          <br />
+          <br />I can translate documents for you to local languages….and more. See here for more info
         </>,
         {
-          widget :"btn2"
+          widget: "btn2",
         }
       );
       updateState(nextMessage);
     }, 10000);
-    setTimeoutId(timeout);
+    setTimeoutId(timeout);    
   };
   const clearTimeoutout = () => {
     if (timeoutId) {
