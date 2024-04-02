@@ -139,6 +139,7 @@
 
     .user-image img {
         width: 100px;
+        height: 100px;
     }
 
     .search-box input[type="text"] {

@@ -85,15 +85,6 @@
 }
 
 
-
-.logo {
-    position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    width: 50px; /* Adjust as needed */
-    height: auto; /* Allow height to adjust automatically */
-}
-
 @media (max-width: 950px){
     .tile{
         height: 50vh;
@@ -110,8 +101,5 @@
     }
     .tile h2{
         font-size: 28px;
-    }
-    .logo{
-        width: 30px;
     }
 }
