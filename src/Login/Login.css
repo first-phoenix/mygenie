@@ -20,6 +20,7 @@ body {
     height: auto; /* Allow height to adjust automatically */
 }
 
+
 .loginHeading{
     font-size: 20px;
     font-weight: bolder;
@@ -30,7 +31,7 @@ body {
     width: 100vw; /* Responsive width */
     padding: 30px; /* Increased padding */
     margin: 20px auto; /* Center the container */
-    background-color: #eed1ffcf; /* Background color */
+    background-color: #efd3ff; /* Background color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
     text-align: center; /* Align text to center */
@@ -122,9 +123,15 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
+    .login-wrapper{
+        padding-top: 50px;
+    }
+
     .login-container {
         width: 90vw; /* Set width to 50% for small screens */
         height: 75vh;
+        padding-top: 50px;
     }
     .logo{
         width: 30px;

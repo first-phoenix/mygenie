@@ -7,7 +7,8 @@ import MainPage from './MainPage/MainPage';
 import Login from './Login/Login';
 import LoadingPage from './LoadingPage/LoadingPage';
 import Welcome from './Welcome/Welcome';
-import Home from './Home/Home'
+import Home from './Home/Home';
+import LandingPage from './StartPage/LandingPage'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="welcome" Component={Welcome} />
             <Route exact path="home" Component={Home} />
             <Route exact path="chathere" Component={MainPage} />
+            <Route exact path="landingpage" Component={LandingPage} />
           </Routes>
         </HashRouter>
       )}
