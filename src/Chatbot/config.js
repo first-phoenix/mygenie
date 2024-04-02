@@ -6,6 +6,7 @@ import DipslayImage from "./components/DipslayImage";
 import DipslayImage2 from "./components/DipslayImage2";
 import TimeoutImage from "./components/TimeoutImage";
 import UserAvatar from "./components/UserAvatar";
+import Btn2 from "./components/Btn2";
 
 const botName = "CGS Gennie";
 const userName = "Jane";
@@ -59,6 +60,10 @@ const config = {
     {
       widgetName: "timeoutImage",
       widgetFunc: (props) => <TimeoutImage {...props} />,
+    },
+    {
+      widgetName: "btn2",
+      widgetFunc: (props) => <Btn2 {...props} />,
     },
   ],
 };

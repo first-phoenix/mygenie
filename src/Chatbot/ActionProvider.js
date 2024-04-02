@@ -181,7 +181,10 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
           <br></br>
           <br></br>I can translate documents for you to local languages….and
           more. See here for more info
-        </>
+        </>,
+        {
+          widget :"btn2"
+        }
       );
       updateState(nextMessage);
     }, 10000);
