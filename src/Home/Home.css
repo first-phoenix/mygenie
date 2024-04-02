@@ -84,20 +84,7 @@
     display: none;
 }
 
-.clickImage{
-    height: 60px;
-    background-color: #f494ff;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 1, 0, 0.54); /* Shadow effect */
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(188,77,255,1) 50%, rgba(120,68,198,1) 100%);
-}
 
-.clickImage:hover{
-    padding: 5px;
-    cursor: pointer;
-    height: 70px;
-}
 
 .logo {
     position: absolute;
