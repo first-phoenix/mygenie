@@ -44,7 +44,7 @@ body {
 }
 
 .loginuser{
-    height: 100px;
+    height: 70px;
     margin-bottom: 10px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
@@ -75,30 +75,30 @@ body {
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px; /* Added margin-bottom */
+    margin-bottom: 2px; /* Added margin-bottom */
 }
 
 input[type="text"],
 input[type="password"],
 input[type="number"] { /* Added input[type="number"] */
     width: 100%;
-    padding: 12px; /* Increased padding */
+    padding: 10px; /* Increased padding */
     border: 1px solid #dd6fff;
     border-radius: 10px; /* Rounded corners */
     box-sizing: border-box;
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 12px;
+    margin-top: 2px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 
 }
 
 select {
-    width: 100%;
+    width: 50%;
     padding: 12px;
     border: 1px solid #dd6fff;
     border-radius: 10px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 

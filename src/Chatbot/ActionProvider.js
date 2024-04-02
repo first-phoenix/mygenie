@@ -41,7 +41,10 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   };
   const afterThirdMessage = () => {
     const message = createChatBotMessage(
-      <>Of course – Here are some prototypes available for your reference</>
+      <>Of course – Here are some prototypes available for your reference</>,
+      {
+        widget: "image2",
+      }
     );
     updateState(message, "keyword4");
   };

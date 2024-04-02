@@ -3,6 +3,8 @@ import Avatar from "./components/Avatar";
 import StartBtn from "./components/StartBtn";
 import data from "./data";
 import DipslayImage from "./components/DipslayImage";
+import DipslayImage2 from "./components/DipslayImage2";
+import TimeoutImage from "./components/TimeoutImage";
 import UserAvatar from "./components/UserAvatar";
 
 const botName = "CGS Gennie";
@@ -49,6 +51,14 @@ const config = {
     {
       widgetName: "image",
       widgetFunc: (props) => <DipslayImage {...props} />,
+    },
+    {
+      widgetName: "image2",
+      widgetFunc: (props) => <DipslayImage2 {...props} />,
+    },
+    {
+      widgetName: "timeoutImage",
+      widgetFunc: (props) => <TimeoutImage {...props} />,
     },
   ],
 };
