@@ -144,6 +144,12 @@
     cursor: pointer;
     margin-left: 3rem;
     width: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.measures-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the shadow as needed */
+  background-color: #804bc0;
 }
 
 .trends-btn {
@@ -188,6 +194,7 @@
     height: 100%;
     object-fit: cover;
 }
+
   /* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
@@ -204,10 +211,16 @@
     gap: 10px;
     align-items: center;
   }
+
   .measures-btn{
     width: 80%;
     margin: 0;
   }
+
+  .measures-btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+  }
+
   .react-chatbot-kit-chat-container {
     width: 100%;
   }
