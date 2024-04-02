@@ -16,7 +16,7 @@ const config = {
   initialMessages: [
     createChatBotMessage(
       <>
-        Hi {userName} – I’m Gennie, how can I assist you today?
+        Hi {userName}, I’m Gennie, how can I assist you today?
         <br />
         <br />
         Click here to know more about me and how I can help you?​​
