@@ -58,9 +58,11 @@
 @media screen and (max-width: 768px) {
     .role-insights-content{
         height: 75vh;
+        width: 85vw;
     }
     .role-insights{
-        padding: 0;
-        width: 75vw;
+        padding-left: 0;
+        padding-right: 0;
+        width: 85vw;
     }
 }
