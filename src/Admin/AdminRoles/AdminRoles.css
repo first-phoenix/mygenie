@@ -1,0 +1,120 @@
+.admin-roles {
+    padding: 100px 20px 20px 20px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.create-button {
+    padding: 10px 20px;
+    background-color: #39005f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 60%;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 1, 0, 0.5); /* Shadow effect */
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.roletiles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.role-tile {
+    width: calc(50% - 20px);
+    height: 150px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(234,199,255,1) 100%, rgba(188,77,255,1) 100%, rgba(120,68,198,1) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(0, 1, 0, 0.7); /* Shadow effect */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.role-tile:hover{
+    box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
+    opacity: 1; /* Set opacity to 50% on hover */
+
+}
+
+.role-tile h2{
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    background-color: rgba(240, 248, 255, 0.75);
+    padding: 5px;
+    border-radius: 10px
+}
+
+.role-tile::-webkit-scrollbar{
+    display: none;
+}
+
+
+.role1{
+    background-image: url('../../Assets/role1.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgb(255, 255, 255); 
+    opacity: 0.8;  
+
+}
+.role2{
+    background-image: url('../../Assets/role2.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgb(255, 255, 255); 
+    opacity: 0.8;  
+
+}
+.role3{
+    background-image: url('../../Assets/role3.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgb(255, 255, 255); 
+    opacity: 0.8;  
+
+}
+.role4{
+    background-image: url('../../Assets/role1.jpg');
+    background-size: cover; /* Cover the entire area of the tile */
+    background-position: center; /* Center the background image */
+    background-color: rgb(255, 255, 255); 
+    opacity: 0.8;  
+
+}
+
+@media screen and (min-width: 768px) {
+    .role-tile {
+        width: calc(25% - 20px);
+    }
+}

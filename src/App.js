@@ -9,6 +9,12 @@ import LoadingPage from './LoadingPage/LoadingPage';
 import Welcome from './Welcome/Welcome';
 import Home from './Home/Home';
 import LandingPage from './StartPage/LandingPage'
+import AdminLogin from './Admin/AdminLogin/AdminLogin';
+import AdminHome from './Admin/AdminHome/AdminHome';
+import AdminRoles from './Admin/AdminRoles/AdminRoles';
+import CreateRole from './Admin/AdminCreateRole/CreateRole';
+import AdminRoles2 from './Admin/AdminRoles2/AdminRoles2';
+import RoleInsights from './Admin/RoleInsights/RoleInsights';
 
 function App() {
 
@@ -34,6 +40,12 @@ function App() {
             <Route exact path="home" Component={Home} />
             <Route exact path="chathere" Component={MainPage} />
             <Route exact path="landingpage" Component={LandingPage} />
+            <Route exact path="adminlogin" Component={AdminLogin} />
+            <Route exact path="adminhome" Component={AdminHome} />
+            <Route exact path="adminroles" Component={AdminRoles} />
+            <Route exact path="createrole" Component={CreateRole} />
+            <Route exact path="adminroles2" Component={AdminRoles2} />
+            <Route exact path="roleinsights" Component={RoleInsights} />
           </Routes>
         </HashRouter>
       )}

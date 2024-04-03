@@ -10,7 +10,7 @@ function Dashboard() {
     <div className='dashboardwrapper'>
       {/* Avatar image */}
             {/* Adding accenture logo to the top left corner */}
-            <img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img>
+            <Link to='/adminlogin'><img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img></Link>
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>      
             <img src={userAvatar} alt="Avatar" className='avatarImage' />

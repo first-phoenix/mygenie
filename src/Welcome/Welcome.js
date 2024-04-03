@@ -13,7 +13,7 @@ const Welcome = () => {
     return (
         <div className='welcome-wrapper'>
             {/* Adding accenture logo to the top left corner */}
-            <img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img>
+            <Link to='/adminlogin'><img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img></Link>
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>            <div className="welcome-container">
                 <h1>Quick lookup</h1>

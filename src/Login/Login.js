@@ -1,7 +1,6 @@
 import React from 'react';
 import './Login.css'; // Importing the CSS file for styling
 import '../App.css';
-import loginuser from '../Assets/login-user.png';
 import loginButton from '../Assets/log-in.png';
 import accentureLogo from '../Assets/Accenture_Logo.png'; // Importing accenture logo
 import logoImage from '../Assets/logo.jpg';
@@ -12,7 +11,7 @@ const Login = () => {
     return (
         <div className='login-wrapper'>
             {/* Adding accenture logo to the top left corner */}
-            <img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img>
+            <Link to='/adminlogin'><img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img></Link>
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>
             <div className="login-container">

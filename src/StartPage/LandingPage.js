@@ -1,5 +1,4 @@
 import React from 'react';
-import Chatbot from 'react-chatbot-kit';
 import 'react-chatbot-kit/build/main.css';
 import '../App.css';
 import Dashboard from '../Dashboard/Dashboard';
