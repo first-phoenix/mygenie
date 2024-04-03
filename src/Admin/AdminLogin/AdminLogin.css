@@ -40,15 +40,8 @@ body {
     margin: 10px;
 }
 
-.login-container::-webkit-scrollbar{
+.adminlogin-container::-webkit-scrollbar{
     display: none;
-}
-
-.loginuser{
-    height: 70px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 .loginbutton{
@@ -124,16 +117,14 @@ button {
 
 @media screen and (max-width: 768px) {
 
-    .login-wrapper{
+    .adminlogin-wrapper{
         padding-top: 50px;
     }
 
-    .login-container {
+    .adminlogin-container {
         width: 90vw; /* Set width to 50% for small screens */
         height: 75vh;
         padding-top: 50px;
     }
-    .logo{
-        width: 30px;
-    }
+
 }
