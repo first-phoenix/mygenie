@@ -7,7 +7,7 @@ body {
     align-items: center;
 }
 
-.login-wrapper{
+.adminlogin-wrapper{
     height: 100vh;
     align-items: center;
 }
@@ -21,12 +21,8 @@ body {
 }
 
 
-.loginHeading{
-    font-size: 20px;
-    font-weight: bolder;
-}
 
-.login-container {
+.adminlogin-container {
     max-width: 600px; /* Increased max-width */
     width: 100vw; /* Responsive width */
     padding: 30px; /* Increased padding */
@@ -40,15 +36,12 @@ body {
     overflow: auto;
 }
 
-.login-container::-webkit-scrollbar{
-    display: none;
+.adminlogin-container h2{
+    margin: 10px;
 }
 
-.loginuser{
-    height: 70px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+.adminlogin-container::-webkit-scrollbar{
+    display: none;
 }
 
 .loginbutton{
@@ -124,16 +117,14 @@ button {
 
 @media screen and (max-width: 768px) {
 
-    .login-wrapper{
+    .adminlogin-wrapper{
         padding-top: 50px;
     }
 
-    .login-container {
+    .adminlogin-container {
         width: 90vw; /* Set width to 50% for small screens */
         height: 75vh;
         padding-top: 50px;
     }
-    .logo{
-        width: 30px;
-    }
+
 }

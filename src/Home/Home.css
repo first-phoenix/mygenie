@@ -84,28 +84,6 @@
     display: none;
 }
 
-.clickImage{
-    height: 70px;
-    background-color: #f494ff;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
-    background: radial-gradient(circle, rgba(125,2,160,0.8428163501728816) 0%, rgba(200,30,204,1) 35%, rgba(69,0,255,1) 100%);
-}
-
-.clickImage:hover{
-    padding: 5px;
-    cursor: pointer;
-    height: 75px;
-}
-
-.logo {
-    position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    width: 50px; /* Adjust as needed */
-    height: auto; /* Allow height to adjust automatically */
-}
 
 @media (max-width: 950px){
     .tile{
@@ -123,8 +101,5 @@
     }
     .tile h2{
         font-size: 28px;
-    }
-    .logo{
-        width: 30px;
     }
 }

@@ -1,21 +1,22 @@
 import React from 'react';
-import './Login.css'; // Importing the CSS file for styling
-import '../App.css';
-import loginButton from '../Assets/log-in.png';
-import accentureLogo from '../Assets/Accenture_Logo.png'; // Importing accenture logo
-import logoImage from '../Assets/logo.jpg';
+import './AdminLogin.css'; // Importing the CSS file for styling
+import '../../App.css';
+import loginButton from '../../Assets/log-in.png';
+import accentureLogo from '../../Assets/Accenture_Logo.png'; // Importing accenture logo
+import logoImage from '../../Assets/logo.jpg';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const AdminLogin = () => {
 
     return (
-        <div className='login-wrapper'>
+        <div className='adminlogin-wrapper'>
             {/* Adding accenture logo to the top left corner */}
             <Link to='/adminlogin'><img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img></Link>
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>
-            <div className="login-container">
+            <div className="adminlogin-container">
                 <img src={logoImage} className='loginuser' alt='UserImage'></img>
+                <h2>Admin Login</h2>
                 <div className="form-group">
                     <label>Email ID</label>
                     <input type="text" placeholder="Enter your email" className='login-input'/>
@@ -28,16 +29,7 @@ const Login = () => {
                     <label>Two factor authentication</label>
                     <input type="text" placeholder="Enter authentication code" className='login-input'/>
                 </div>
-                <div className="form-group">
-                    <label>Choose Role</label>
-                    <select>
-                        <option disabled selected>Select Role</option>
-                        <option value="Compliance Manager">Compliance Manager</option>
-                        <option value="Labelling Manager">Labelling Manager</option>
-                        <option value="Packaging Manager">Packaging Manager</option>
-                    </select>
-                </div>
-                <Link to='/landingpage'>
+                <Link to='/adminhome'>
                 <img src={loginButton} alt='Log in' className='loginbutton'></img>
                 </Link>
             </div>
@@ -45,4 +37,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default AdminLogin;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import timeoutimg from "../Assets/timeout.png";
+// import timeoutimg from "../Assets/timeout.png";
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const [timeoutId, setTimeoutId] = useState(null);
