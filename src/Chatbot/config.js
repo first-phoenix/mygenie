@@ -8,7 +8,7 @@ import TimeoutImage from "./components/TimeoutImage";
 import UserAvatar from "./components/UserAvatar";
 import Btn2 from "./components/Btn2";
 
-const botName = "CGS Gennie";
+const botName = "My Genie";
 const userName = "Jane";
 
 const config = {
