@@ -1,6 +1,6 @@
 .create-role {
     padding: 20px;
-    height: 100vh;
+    height: 95vh;
     width: 75vw;
     text-align: center;
     align-items: center;
@@ -105,5 +105,10 @@ button[type='submit']:hover {
   }
   @media screen and (max-width: 768px) {
 
-
+    .create-role{
+      padding-left: 0;
+    }
+    .role-form{
+      height: 75vh;
+    }
   }
