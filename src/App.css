@@ -19,6 +19,10 @@
     overflow: auto;
 
   }
+
+.App::-webkit-scrollbar{
+  display: none;
+}
   
   .logo{
     border-radius: 10px;

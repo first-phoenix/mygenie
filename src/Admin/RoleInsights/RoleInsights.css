@@ -15,7 +15,7 @@
     max-width: 600px;
     width: 75vw;
     margin: 0 auto;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,167,255,1) 88%, rgba(207,127,255,1) 96%, rgba(198,102,255,1) 99%, rgba(171,29,255,1) 100%);
+    background-color: #efd3ff; /* Background color */
     padding: 20px;
     border-radius: 15px;
 }
