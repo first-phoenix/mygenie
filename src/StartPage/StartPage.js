@@ -10,7 +10,7 @@ const StartPage = () => {
         <div className='start-page'>
             <div className='landingtile'>
                 <p>Recent Activity - Baby Food Project</p>
-                <Link to='/welcome'><img src={clickImage} alt='click here' className='clickImage'></img></Link>
+                <Link to='/chathere'><img src={clickImage} alt='click here' className='clickImage'></img></Link>
 
                 </div>
             <div className='landingtile'>
@@ -19,7 +19,7 @@ const StartPage = () => {
             </div>
             <div className='landingtile'>
                 <p>Learning Today</p>
-                <Link to='/welcome'><img src={clickImage} alt='click here' className='clickImage'></img></Link>
+                <img src={clickImage} alt='click here' className='clickImage'></img>
 
                 </div>
             <div className='landingtile'>
@@ -29,7 +29,7 @@ const StartPage = () => {
                 </div>
             <div className='landingtile'>
                 <p>My Organization Information</p>
-                <Link to='/welcome'><img src={clickImage} alt='click here' className='clickImage'></img></Link>
+                <img src={clickImage} alt='click here' className='clickImage'></img>
 
                 </div>
         </div>

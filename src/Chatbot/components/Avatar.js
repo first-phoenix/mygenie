@@ -1,5 +1,5 @@
 import React from 'react'
-import Gennie from '../../Assets/logo.jpg'
+import Gennie from '../../Assets/LogoG.jpg'
 
 export default function Avatar() {
 

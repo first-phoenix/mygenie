@@ -46,6 +46,15 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.form-group input[type='text']:hover,
+.form-group textarea:hover {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Shadow effect */
+}
+
 .form-group textarea {
     height: 50px;
 }

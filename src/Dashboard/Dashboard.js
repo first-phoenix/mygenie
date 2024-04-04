@@ -2,7 +2,7 @@ import React from 'react';
 import './Dashboard.css';
 import userAvatar from '../Assets/WelcomeAvatar.jpg'
 import logoImage from '../Assets/logo.jpg';
-import accentureLogo from '../Assets/Accenture_Logo.png'; // Importing accenture logo
+// import accentureLogo from '../Assets/Accenture_Logo.png'; // Importing accenture logo
 import { Link } from 'react-router-dom';
 
 function Dashboard() {
@@ -10,7 +10,7 @@ function Dashboard() {
     <div className='dashboardwrapper'>
       {/* Avatar image */}
             {/* Adding accenture logo to the top left corner */}
-            <Link to='/adminlogin'><img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img></Link>
+            {/* <Link to='/adminlogin'><img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img></Link> */}
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>      
             <img src={userAvatar} alt="Avatar" className='avatarImage' />
