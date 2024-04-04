@@ -45,10 +45,9 @@ body {
 }
 
 .loginuser{
-    height: 70px;
+    height: 100px;
     margin-bottom: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 .loginbutton{

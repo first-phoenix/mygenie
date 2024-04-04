@@ -66,6 +66,7 @@ body {
     align-items: center;
 }
 
+
 label {
     display: block;
     font-weight: bold;
@@ -83,6 +84,20 @@ input[type="number"] { /* Added input[type="number"] */
     font-size: 12px;
     margin-top: 2px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover { /* Added input[type="number"] */
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    border: 1px solid #dd6fff;
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box;
+    font-size: 12px;
+    margin-top: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Shadow effect */
 
 }
 
