@@ -1,0 +1,254 @@
+/* General styles */
+.home-wrapper {
+    /* padding: 20px; */
+    position: relative; /* Ensure relative positioning for absolute logo */
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: auto;
+    height: 50px;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.left-section {
+    margin-top: 40px;
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.site-heading{
+    margin: 10px 10px 10px 50px;
+    font-size: 40px;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.8);
+}
+
+.site-sub-heading{
+    margin: 20px 10px 10px 50px;
+    font-size: 18px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.site-description{
+    margin: 50px 10px 10px 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* image section */
+
+.right-image-bg{
+    filter: drop-shadow(50px 50px 20px rgba(0, 0, 0, 0.7)); 
+    width: 35vw;
+    margin-left: 50px;
+}
+
+.right-image-bg:hover{
+    filter: drop-shadow(50px 50px 20px rgba(0, 0, 0, 0.9)); 
+    width: 35vw;
+    height: auto;
+}
+
+/* Video section */
+.video-section {
+    display: flex;
+    margin:  20px 20px 20px 20px;
+}
+
+.video-section div {
+    flex: 1;
+    margin-right: 10px; /* Adjust spacing between videos */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+@media screen and (min-width: 769px) {
+    .video-section {
+        display: flex;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .video-section div {
+        flex: 1;
+        margin-right: 10px; /* Adjust spacing between videos */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+    }
+
+    .home-video-1,
+    .home-video-2 {
+        position: relative;
+        width: 50%; /* Each video takes up 50% of the container */
+        padding-bottom: 28%; /* 16:9 aspect ratio (height/width) */
+        overflow: hidden;
+        margin-top: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .home-video-1 iframe,
+    .home-video-2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
+
+
+iframe{
+    border-radius: 15px;
+}
+
+/* Description divs */
+.description-divs {
+    margin-top: 20px; /* Added margin top */
+}
+
+/* Three divs */
+.three-divs {
+    display: flex;
+    flex-direction: column; /* Stack divs vertically */
+    margin-top: 20px; /* Added margin top */    
+    flex: 1;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Button */
+.launch-genie-button{
+    position: relative;
+    background: #000000;
+    color: #fff;
+    line-height: 1.25;
+    border: 0;
+    padding: .6vw 1.172vw .9vw;
+    border-radius: .15vw !important;
+    font-size: 18px;
+    font-family: Graphik-SemiBold-Web;
+    width: 12vw;
+    font-weight: 700;
+    margin: 50px 10px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    min-width: 200px;
+    height: 50px;
+}
+
+.launch-genie-button:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* content pictured */
+
+.homepage-content-1, .homepage-content-2{
+    width: 100vw;
+    margin: 25px 10px 25px 10px;
+    box-shadow: 0 0 20px rgba(0, 1, 0, 0.5); /* Shadow effect */
+
+}
+
+.homepage-content-1:hover, .homepage-content-2:hover{
+    box-shadow: 0 0 20px rgba(0, 1, 0, 1); /* Shadow effect */
+
+}
+
+.footer-homepage{
+    margin: 10px;
+}
+
+/* desctiption */
+
+
+/* For responsive design */
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    
+    .site-heading{
+        margin: 10px 10px 10px 10px;
+        font-size: 40px;
+    }
+
+    .site-sub-heading{
+        margin: 20px 10px 10px 10px;
+        font-size: 18px;
+    }
+
+    .site-description{
+        margin: 50px 10px 10px 10px;
+    }
+
+    /* image section */
+
+    .right-image-bg{
+        filter: drop-shadow(50px 50px 20px rgba(0, 0, 0, 0.7)); 
+        width: 35vw;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .right-image-bg:hover{
+        filter: drop-shadow(50px 50px 20px rgba(0, 0, 0, 0.9)); 
+        width: 35vw;
+        height: auto;
+    }
+
+    .launch-genie-button{
+        margin: 30px 10px 10px 10px;;
+    }
+
+    .video-section {
+        flex-direction: column;
+        flex: 1;
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        margin: 10px 30px 10px 50px;
+    }
+
+    .video-section div {
+        margin-right: 0 0 0 0;
+    }
+
+    .home-video-1, .home-video-2{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
+        overflow: hidden;
+        margin-top: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+
+    }
+    
+    .home-video-1 iframe, .home-video-2 iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+
+    }
+}

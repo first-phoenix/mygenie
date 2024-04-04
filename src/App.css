@@ -17,6 +17,7 @@
     background: linear-gradient(to right, #9f00e3, #9f00e341);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow: auto;
+    font-family: Graphik;
 
   }
 

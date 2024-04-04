@@ -15,6 +15,7 @@ import AdminRoles from './Admin/AdminRoles/AdminRoles';
 import CreateRole from './Admin/AdminCreateRole/CreateRole';
 import AdminRoles2 from './Admin/AdminRoles2/AdminRoles2';
 import RoleInsights from './Admin/RoleInsights/RoleInsights';
+import HomePage from './HomePage/HomePage';
 
 function App() {
 
@@ -34,8 +35,9 @@ function App() {
       ) : (
         <HashRouter>
           <Routes>
-            <Route exact path="/cgsgennie" Component={Login} />
-            <Route exact path="/" Component={Login} />
+            <Route exact path="/cgsgennie" Component={HomePage} />
+            <Route exact path="/" Component={HomePage} />
+            <Route exact path="/login" Component={Login} />
             <Route exact path="welcome" Component={Welcome} />
             <Route exact path="home" Component={Home} />
             <Route exact path="chathere" Component={MainPage} />
