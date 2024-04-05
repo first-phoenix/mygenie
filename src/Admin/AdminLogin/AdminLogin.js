@@ -4,6 +4,7 @@ import '../../App.css';
 import loginButton from '../../Assets/log-in.png';
 import accentureLogo from '../../Assets/Accenture_Logo.png'; // Importing accenture logo
 import logoImage from '../../Assets/logo.jpg';
+import logoGenie from '../../Assets/login-user.png';
 import { Link } from 'react-router-dom';
 
 const AdminLogin = () => {
@@ -15,7 +16,7 @@ const AdminLogin = () => {
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>
             <div className="adminlogin-container">
-                <img src={logoImage} className='loginuser' alt='UserImage'></img>
+                <img src={logoGenie} className='loginuser' alt='UserImage'></img>
                 <h2>Admin Login</h2>
                 <div className="form-group">
                     <label>Email ID</label>
