@@ -24,6 +24,8 @@
     height: auto;
     margin-bottom: 20px;
     border-radius: 25px;
+    filter: drop-shadow(50px 50px 8px rgba(0, 0, 0, 0.7)); 
+
 }
 
 .loading-text {
