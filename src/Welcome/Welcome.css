@@ -145,4 +145,8 @@
     .search-box input[type="text"] {
         width: 150px;
     }
+
+    .welcome-container{
+        padding-top: 50px;
+    }
 }
