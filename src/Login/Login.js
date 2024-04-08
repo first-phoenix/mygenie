@@ -16,6 +16,7 @@ const Login = () => {
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>
             <div className="login-container">
+                <h1>Login</h1>
                 <img src={loginlogo} className='loginuser' alt='UserImage'></img>
                 <div className="form-group">
                     <label>Email ID</label>
