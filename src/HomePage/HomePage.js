@@ -16,9 +16,9 @@ const HomePage = () => {
             <div className="main-content">
                 {/* Left section */}
                 <div className="left-section">
-                    <h1 className='site-heading'>Introducing myGenie</h1>
-                    <h3 className='site-sub-heading'>Unleashing human potential through next generation technologies</h3>
-                    <p className='site-description'>In the dynamic landscape of modern industry, staying ahead of the curve requires more than just intuition – it demands actionable insights driven by data and powered by cutting-edge artificial intelligence. Enter Gen AI, the next-generation platform tailored specifically for industry managers and directors seeking to optimize operations, enhance decision-making, and drive sustainable growth. Gen : generative ai myGenie provides an</p>
+                    <h1 className='site-heading'>Introducing MyGenie</h1>
+                    <h3 className='site-sub-heading'>Unleashing Human Potential though NextGenTechnolgies</h3>
+                    <p className='site-description'>Hyper-Personalized (My), Generative AI Driven (Gen), Integrated (I), Enterprise (E) business enablement platform. Reshaping how business interact with Technology Systems and Platforms.</p>
                     <Link to='/login'><button className='launch-genie-button'>Launch myGenie</button></Link>
                 </div>
 
