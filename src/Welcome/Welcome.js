@@ -16,7 +16,7 @@ const Welcome = () => {
             {/* <Link to='/adminlogin'><img src={accentureLogo} alt='Accenture Logo' className='top-right-logo'></img></Link> */}
             {/* Adding abc logo to the top right corner */}
             <Link to='/'><img src={logoImage} alt='Mygenie Logo' className='top-left-logo'></img></Link>            <div className="welcome-container">
-                <h1>Quick lookup</h1>
+                <h1>New Project</h1>
                 <h2>Welcome Jane</h2>
                 <div className="user-image">
                     <img src={welcomeAvatar} alt="User" className='user-image-avatar' />
