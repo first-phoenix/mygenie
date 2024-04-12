@@ -48,7 +48,6 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
               "filter": null,
               "strictness": 3,
               "topNDocuments": 5,
-              "key": "",
               "embeddingDeploymentName": "adaGticazure"
             }
           }
