@@ -31,7 +31,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'api-key': ''
+        'api-key': '8cb41bd64e2f463282cde414c3aacf3f'
       },
       body: JSON.stringify({
         "dataSources": [
@@ -48,6 +48,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
               "filter": null,
               "strictness": 3,
               "topNDocuments": 5,
+              "key": "fcBKlfYxLOAdSOW8p7FhFqUwiuY6ahdvFrc8Mg79jjAzSeClPtdq",
               "embeddingDeploymentName": "adaGticazure"
             }
           }
