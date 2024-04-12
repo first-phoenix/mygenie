@@ -31,7 +31,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'api-key': '8cb41bd64e2f463282cde414c3aacf3f'
+        'api-key': ''
       },
       body: JSON.stringify({
         "dataSources": [
