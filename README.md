@@ -1,3 +1,3 @@
 # mygenie
 
-deployed at https://first-phoenix.github.io/cgsgennie/
+deployed at https://first-phoenix.github.io/mygenie/
