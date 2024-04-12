@@ -34,7 +34,7 @@
     top: 10px;
     left: 10px;
     width: auto;
-    height: 50px;
+    height: 75px;
 }
 
 .top-right-logo {
@@ -135,7 +135,6 @@
     display: grid;
     place-items: center;
     color: white;
-    border-radius: 100%;
   }
 
 .UA {
