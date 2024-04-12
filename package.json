@@ -42,5 +42,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "proxy": "https://kdcatcigticaureopenai.openai.azure.com/openai/deployments/KDCGticOpenAIChatBot/extensions/chat/completions?api-version=2023-08-01-preview"
 }

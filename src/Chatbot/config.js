@@ -21,51 +21,51 @@ const config = {
         <br />
         Click here to know more about me and how I can help you?​​
       </>,
-      {
-        widget: "startBtn",
-      }
+      // {
+      //   widget: "startBtn",
+      // }
     ),
   ],
   customComponents: {
     botAvatar: (props) => <Avatar {...props} />,
     userAvatar: (props) => <UserAvatar {...props} />,
   },
-  state: {
-    checker: null,
-    data,
-    userData: {
-      name: "",
-      age: "",
-      category: "",
-      product: {
-        name: "",
-        link: "",
-        imageUrl: "",
-      },
-    },
-  },
-  widgets: [
-    {
-      widgetName: "startBtn",
-      widgetFunc: (props) => <StartBtn {...props} />,
-    },
-    {
-      widgetName: "image",
-      widgetFunc: (props) => <DipslayImage {...props} />,
-    },
-    {
-      widgetName: "image2",
-      widgetFunc: (props) => <DipslayImage2 {...props} />,
-    },
-    {
-      widgetName: "timeoutImage",
-      widgetFunc: (props) => <TimeoutImage {...props} />,
-    },
-    {
-      widgetName: "btn2",
-      widgetFunc: (props) => <Btn2 {...props} />,
-    },
-  ],
+  // state: {
+  //   checker: null,
+  //   data,
+  //   userData: {
+  //     name: "",
+  //     age: "",
+  //     category: "",
+  //     product: {
+  //       name: "",
+  //       link: "",
+  //       imageUrl: "",
+  //     },
+  //   },
+  // },
+  // widgets: [
+  //   {
+  //     widgetName: "startBtn",
+  //     widgetFunc: (props) => <StartBtn {...props} />,
+  //   },
+  //   {
+  //     widgetName: "image",
+  //     widgetFunc: (props) => <DipslayImage {...props} />,
+  //   },
+  //   {
+  //     widgetName: "image2",
+  //     widgetFunc: (props) => <DipslayImage2 {...props} />,
+  //   },
+  //   {
+  //     widgetName: "timeoutImage",
+  //     widgetFunc: (props) => <TimeoutImage {...props} />,
+  //   },
+  //   {
+  //     widgetName: "btn2",
+  //     widgetFunc: (props) => <Btn2 {...props} />,
+  //   },
+  // ],
 };
 
 export default config;
