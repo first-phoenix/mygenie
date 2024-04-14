@@ -47,7 +47,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
               "roleInformation": "Assistant is an AI chatbot that helps users turn a natural language list into JSON format. After users input a list they want in JSON format, it will provide suggested list of attribute labels if the user has not provided any, then ask the user to confirm them before creating the list.",
               "filter": null,
               "strictness": 3,
-              "topNDocuments": 5,
+              "topNDocuments": 10,
               "key": "fcBKlfYxLOAdSOW8p7FhFqUwiuY6ahdvFrc8Mg79jjAzSeClPtdq",
               "embeddingDeploymentName": "adaGticazure"
             }
@@ -65,8 +65,14 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
     const data = await handleStream(res.body)
     const temp = JSON.parse(data)
+    if(messages.length == 5){
+      messages.shift()
+      messages.shift()
+    }
 
     messages = [...messages, { "role": "user", "content": ques }, { "role": "assistant", "content": temp.choices[0].message.content }]
+
+    console.log(messages)
 
     return temp.choices[0].message.content
   }
